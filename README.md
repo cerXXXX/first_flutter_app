@@ -1,4 +1,4 @@
-# my_first_app
+# first_flame_game
 
 A new Flutter project.
 
