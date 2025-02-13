@@ -1,27 +1,23 @@
 import os
 
-# Папка с ассетами
-ASSETS_DIR = 'assets'
+ASSETS_DIR = "assets"  # Укажи путь к папке с ассетами, если она в другом месте
 
-# Функция для рекурсивного обхода файлов
-def find_assets(directory):
-    asset_paths = []
-    for root, _, files in os.walk(directory):
-        for file in files:
-            path = os.path.join(root, file).replace('\\', '/')  # Для Windows
-            asset_paths.append(path)
-    return asset_paths
+def get_folders(root_dir):
+    folders = set()
+    for root, dirs, files in os.walk(root_dir):
+        if files:  # Добавляем только папки, содержащие файлы
+            folders.add(root.replace("\\", "/") + "/")
+    return sorted(folders)
 
-# Генерация строк для pubspec.yaml
-def generate_pubspec_assets():
-    assets = find_assets(ASSETS_DIR)
-    if not assets:
-        print(f'В папке "{ASSETS_DIR}" не найдено файлов.')
-        return
+def generate_pubspec_entries(folders):
+    print("flutter:")
+    print("  assets:")
+    for folder in folders:
+        print(f"    - {folder}")
 
-    print('assets:')
-    for asset in assets:
-        print(f'  - {asset}')
-
-if __name__ == '__main__':
-    generate_pubspec_assets()
+if __name__ == "__main__":
+    if os.path.exists(ASSETS_DIR):
+        folders = get_folders(ASSETS_DIR)
+        generate_pubspec_entries(folders)
+    else:
+        print(f"Папка '{ASSETS_DIR}' не найдена.")

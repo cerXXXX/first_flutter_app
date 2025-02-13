@@ -61,363 +61,72 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-      - assets/images/20 Enemies.png
-      - assets/images/Hello.png
-      - assets/images/Background/Blue.png
-      - assets/images/Background/Brown.png
-      - assets/images/Background/Gray.png
-      - assets/images/Background/Green.png
-      - assets/images/Background/Pink.png
-      - assets/images/Background/Purple.png
-      - assets/images/Background/Yellow.png
-      - assets/images/HUD/Joystick.png
-      - assets/images/HUD/Knob.png
-      - assets/images/Items/Boxes/Box1/Break.png
-      - assets/images/Items/Boxes/Box1/Hit (28x24).png
-      - assets/images/Items/Boxes/Box1/Idle.png
-      - assets/images/Items/Boxes/Box2/Break.png
-      - assets/images/Items/Boxes/Box2/Hit (28x24).png
-      - assets/images/Items/Boxes/Box2/Idle.png
-      - assets/images/Items/Boxes/Box3/Break.png
-      - assets/images/Items/Boxes/Box3/Hit (28x24).png
-      - assets/images/Items/Boxes/Box3/Idle.png
-      - assets/images/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png
-      - assets/images/Items/Checkpoints/Checkpoint/Checkpoint (Flag Out) (64x64).png
-      - assets/images/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png
-      - assets/images/Items/Checkpoints/End/End (Idle).png
-      - assets/images/Items/Checkpoints/End/End (Pressed) (64x64).png
-      - assets/images/Items/Checkpoints/Start/Start (Idle).png
-      - assets/images/Items/Checkpoints/Start/Start (Moving) (64x64).png
-      - assets/images/Items/Fruits/Apple.png
-      - assets/images/Items/Fruits/Bananas.png
-      - assets/images/Items/Fruits/Cherries.png
-      - assets/images/Items/Fruits/Collected.png
-      - assets/images/Items/Fruits/Kiwi.png
-      - assets/images/Items/Fruits/Melon.png
-      - assets/images/Items/Fruits/Orange.png
-      - assets/images/Items/Fruits/Pineapple.png
-      - assets/images/Items/Fruits/Strawberry.png
-      - assets/images/Main Characters/Appearing (96x96).png
-      - assets/images/Main Characters/Desappearing (96x96).png
-      - assets/images/Main Characters/Mask Dude/Double Jump (32x32).png
-      - assets/images/Main Characters/Mask Dude/Fall (32x32).png
-      - assets/images/Main Characters/Mask Dude/Hit (32x32).png
-      - assets/images/Main Characters/Mask Dude/Idle (32x32).png
-      - assets/images/Main Characters/Mask Dude/Jump (32x32).png
-      - assets/images/Main Characters/Mask Dude/Run (32x32).png
-      - assets/images/Main Characters/Mask Dude/Wall Jump (32x32).png
-      - assets/images/Main Characters/Ninja Frog/Double Jump (32x32).png
-      - assets/images/Main Characters/Ninja Frog/Fall (32x32).png
-      - assets/images/Main Characters/Ninja Frog/Hit (32x32).png
-      - assets/images/Main Characters/Ninja Frog/Idle (32x32).png
-      - assets/images/Main Characters/Ninja Frog/Jump (32x32).png
-      - assets/images/Main Characters/Ninja Frog/Run (32x32).png
-      - assets/images/Main Characters/Ninja Frog/Wall Jump (32x32).png
-      - assets/images/Main Characters/Pink Man/Double Jump (32x32).png
-      - assets/images/Main Characters/Pink Man/Fall (32x32).png
-      - assets/images/Main Characters/Pink Man/Hit (32x32).png
-      - assets/images/Main Characters/Pink Man/Idle (32x32).png
-      - assets/images/Main Characters/Pink Man/Jump (32x32).png
-      - assets/images/Main Characters/Pink Man/Run (32x32).png
-      - assets/images/Main Characters/Pink Man/Wall Jump (32x32).png
-      - assets/images/Main Characters/Virtual Guy/Double Jump (32x32).png
-      - assets/images/Main Characters/Virtual Guy/Fall (32x32).png
-      - assets/images/Main Characters/Virtual Guy/Hit (32x32).png
-      - assets/images/Main Characters/Virtual Guy/Idle (32x32).png
-      - assets/images/Main Characters/Virtual Guy/Jump (32x32).png
-      - assets/images/Main Characters/Virtual Guy/Run (32x32).png
-      - assets/images/Main Characters/Virtual Guy/Wall Jump (32x32).png
-      - assets/images/Menu/Buttons/Achievements.png
-      - assets/images/Menu/Buttons/Back.png
-      - assets/images/Menu/Buttons/Close.png
-      - assets/images/Menu/Buttons/Leaderboard.png
-      - assets/images/Menu/Buttons/Levels.png
-      - assets/images/Menu/Buttons/Next.png
-      - assets/images/Menu/Buttons/Play.png
-      - assets/images/Menu/Buttons/Previous.png
-      - assets/images/Menu/Buttons/Restart.png
-      - assets/images/Menu/Buttons/Settings.png
-      - assets/images/Menu/Buttons/Volume.png
-      - assets/images/Menu/Levels/01.png
-      - assets/images/Menu/Levels/02.png
-      - assets/images/Menu/Levels/03.png
-      - assets/images/Menu/Levels/04.png
-      - assets/images/Menu/Levels/05.png
-      - assets/images/Menu/Levels/06.png
-      - assets/images/Menu/Levels/07.png
-      - assets/images/Menu/Levels/08.png
-      - assets/images/Menu/Levels/09.png
-      - assets/images/Menu/Levels/10.png
-      - assets/images/Menu/Levels/11.png
-      - assets/images/Menu/Levels/12.png
-      - assets/images/Menu/Levels/13.png
-      - assets/images/Menu/Levels/14.png
-      - assets/images/Menu/Levels/15.png
-      - assets/images/Menu/Levels/16.png
-      - assets/images/Menu/Levels/17.png
-      - assets/images/Menu/Levels/18.png
-      - assets/images/Menu/Levels/19.png
-      - assets/images/Menu/Levels/20.png
-      - assets/images/Menu/Levels/21.png
-      - assets/images/Menu/Levels/22.png
-      - assets/images/Menu/Levels/23.png
-      - assets/images/Menu/Levels/24.png
-      - assets/images/Menu/Levels/25.png
-      - assets/images/Menu/Levels/26.png
-      - assets/images/Menu/Levels/27.png
-      - assets/images/Menu/Levels/28.png
-      - assets/images/Menu/Levels/29.png
-      - assets/images/Menu/Levels/30.png
-      - assets/images/Menu/Levels/31.png
-      - assets/images/Menu/Levels/32.png
-      - assets/images/Menu/Levels/33.png
-      - assets/images/Menu/Levels/34.png
-      - assets/images/Menu/Levels/35.png
-      - assets/images/Menu/Levels/36.png
-      - assets/images/Menu/Levels/37.png
-      - assets/images/Menu/Levels/38.png
-      - assets/images/Menu/Levels/39.png
-      - assets/images/Menu/Levels/40.png
-      - assets/images/Menu/Levels/41.png
-      - assets/images/Menu/Levels/42.png
-      - assets/images/Menu/Levels/43.png
-      - assets/images/Menu/Levels/44.png
-      - assets/images/Menu/Levels/45.png
-      - assets/images/Menu/Levels/46.png
-      - assets/images/Menu/Levels/47.png
-      - assets/images/Menu/Levels/48.png
-      - assets/images/Menu/Levels/49.png
-      - assets/images/Menu/Levels/50.png
-      - assets/images/Menu/Text/Text (Black) (8x10).png
-      - assets/images/Menu/Text/Text (White) (8x10).png
-      - assets/images/Other/Confetti (16x16).png
-      - assets/images/Other/Dust Particle.png
-      - assets/images/Other/Shadow.png
-      - assets/images/Other/Transition.png
-      - assets/images/Terrain/Terrain_(16x16).png
-      - assets/images/Traps/Arrow/Hit (18x18).png
-      - assets/images/Traps/Arrow/Idle (18x18).png
-      - assets/images/Traps/Blocks/HitSide (22x22).png
-      - assets/images/Traps/Blocks/HitTop (22x22).png
-      - assets/images/Traps/Blocks/Idle.png
-      - assets/images/Traps/Blocks/Part 1 (22x22).png
-      - assets/images/Traps/Blocks/Part 2 (22x22).png
-      - assets/images/Traps/Falling Platforms/Off.png
-      - assets/images/Traps/Falling Platforms/On (32x10).png
-      - assets/images/Traps/Fan/Off.png
-      - assets/images/Traps/Fan/On (24x8).png
-      - assets/images/Traps/Fire/Hit (16x32).png
-      - assets/images/Traps/Fire/Off.png
-      - assets/images/Traps/Fire/On (16x32).png
-      - assets/images/Traps/Platforms/Brown Off.png
-      - assets/images/Traps/Platforms/Brown On (32x8).png
-      - assets/images/Traps/Platforms/Chain.png
-      - assets/images/Traps/Platforms/Grey Off.png
-      - assets/images/Traps/Platforms/Grey On (32x8).png
-      - assets/images/Traps/Rock Head/Blink (42x42).png
-      - assets/images/Traps/Rock Head/Bottom Hit (42x42).png
-      - assets/images/Traps/Rock Head/Idle.png
-      - assets/images/Traps/Rock Head/Left Hit (42x42).png
-      - assets/images/Traps/Rock Head/Right Hit (42x42).png
-      - assets/images/Traps/Rock Head/Top Hit (42x42).png
-      - assets/images/Traps/Sand Mud Ice/Ice Particle.png
-      - assets/images/Traps/Sand Mud Ice/Mud Particle.png
-      - assets/images/Traps/Sand Mud Ice/Sand Mud Ice (16x6).png
-      - assets/images/Traps/Sand Mud Ice/Sand Particle.png
-      - assets/images/Traps/Saw/Chain.png
-      - assets/images/Traps/Saw/Off.png
-      - assets/images/Traps/Saw/On (38x38).png
-      - assets/images/Traps/Spike Head/Blink (54x52).png
-      - assets/images/Traps/Spike Head/Bottom Hit (54x52).png
-      - assets/images/Traps/Spike Head/Idle.png
-      - assets/images/Traps/Spike Head/Left Hit (54x52).png
-      - assets/images/Traps/Spike Head/Right Hit (54x52).png
-      - assets/images/Traps/Spike Head/Top Hit (54x52).png
-      - assets/images/Traps/Spiked Ball/Chain.png
-      - assets/images/Traps/Spiked Ball/Spiked Ball.png
-      - assets/images/Traps/Spikes/Idle.png
-      - assets/images/Traps/Trampoline/Idle.png
-      - assets/images/Traps/Trampoline/Jump (28x28).png
-      - assets/tiles/Level-01.tmx
-      - assets/tiles/Level-02.tmx
-      - assets/tiles/PixelAdventure.tiled-project
-      - assets/tiles/PixelAdventure.tiled-session
-      - assets/tiles/PixelAdventure.tsx
-      - assets/tiles/images/20 Enemies.png
-      - assets/tiles/images/Hello.png
-      - assets/tiles/images/Background/Blue.png
-      - assets/tiles/images/Background/Brown.png
-      - assets/tiles/images/Background/Gray.png
-      - assets/tiles/images/Background/Green.png
-      - assets/tiles/images/Background/Pink.png
-      - assets/tiles/images/Background/Purple.png
-      - assets/tiles/images/Background/Yellow.png
-      - assets/tiles/images/Items/Boxes/Box1/Break.png
-      - assets/tiles/images/Items/Boxes/Box1/Hit (28x24).png
-      - assets/tiles/images/Items/Boxes/Box1/Idle.png
-      - assets/tiles/images/Items/Boxes/Box2/Break.png
-      - assets/tiles/images/Items/Boxes/Box2/Hit (28x24).png
-      - assets/tiles/images/Items/Boxes/Box2/Idle.png
-      - assets/tiles/images/Items/Boxes/Box3/Break.png
-      - assets/tiles/images/Items/Boxes/Box3/Hit (28x24).png
-      - assets/tiles/images/Items/Boxes/Box3/Idle.png
-      - assets/tiles/images/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png
-      - assets/tiles/images/Items/Checkpoints/Checkpoint/Checkpoint (Flag Out) (64x64).png
-      - assets/tiles/images/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png
-      - assets/tiles/images/Items/Checkpoints/End/End (Idle).png
-      - assets/tiles/images/Items/Checkpoints/End/End (Pressed) (64x64).png
-      - assets/tiles/images/Items/Checkpoints/Start/Start (Idle).png
-      - assets/tiles/images/Items/Checkpoints/Start/Start (Moving) (64x64).png
-      - assets/tiles/images/Items/Fruits/Apple.png
-      - assets/tiles/images/Items/Fruits/Bananas.png
-      - assets/tiles/images/Items/Fruits/Cherries.png
-      - assets/tiles/images/Items/Fruits/Collected.png
-      - assets/tiles/images/Items/Fruits/Kiwi.png
-      - assets/tiles/images/Items/Fruits/Melon.png
-      - assets/tiles/images/Items/Fruits/Orange.png
-      - assets/tiles/images/Items/Fruits/Pineapple.png
-      - assets/tiles/images/Items/Fruits/Strawberry.png
-      - assets/tiles/images/Main Characters/Appearing (96x96).png
-      - assets/tiles/images/Main Characters/Desappearing (96x96).png
-      - assets/tiles/images/Main Characters/Mask Dude/Double Jump (32x32).png
-      - assets/tiles/images/Main Characters/Mask Dude/Fall (32x32).png
-      - assets/tiles/images/Main Characters/Mask Dude/Hit (32x32).png
-      - assets/tiles/images/Main Characters/Mask Dude/Idle (32x32).png
-      - assets/tiles/images/Main Characters/Mask Dude/Jump (32x32).png
-      - assets/tiles/images/Main Characters/Mask Dude/Run (32x32).png
-      - assets/tiles/images/Main Characters/Mask Dude/Wall Jump (32x32).png
-      - assets/tiles/images/Main Characters/Ninja Frog/Double Jump (32x32).png
-      - assets/tiles/images/Main Characters/Ninja Frog/Fall (32x32).png
-      - assets/tiles/images/Main Characters/Ninja Frog/Hit (32x32).png
-      - assets/tiles/images/Main Characters/Ninja Frog/Idle (32x32).png
-      - assets/tiles/images/Main Characters/Ninja Frog/Jump (32x32).png
-      - assets/tiles/images/Main Characters/Ninja Frog/Run (32x32).png
-      - assets/tiles/images/Main Characters/Ninja Frog/Wall Jump (32x32).png
-      - assets/tiles/images/Main Characters/Pink Man/Double Jump (32x32).png
-      - assets/tiles/images/Main Characters/Pink Man/Fall (32x32).png
-      - assets/tiles/images/Main Characters/Pink Man/Hit (32x32).png
-      - assets/tiles/images/Main Characters/Pink Man/Idle (32x32).png
-      - assets/tiles/images/Main Characters/Pink Man/Jump (32x32).png
-      - assets/tiles/images/Main Characters/Pink Man/Run (32x32).png
-      - assets/tiles/images/Main Characters/Pink Man/Wall Jump (32x32).png
-      - assets/tiles/images/Main Characters/Virtual Guy/Double Jump (32x32).png
-      - assets/tiles/images/Main Characters/Virtual Guy/Fall (32x32).png
-      - assets/tiles/images/Main Characters/Virtual Guy/Hit (32x32).png
-      - assets/tiles/images/Main Characters/Virtual Guy/Idle (32x32).png
-      - assets/tiles/images/Main Characters/Virtual Guy/Jump (32x32).png
-      - assets/tiles/images/Main Characters/Virtual Guy/Run (32x32).png
-      - assets/tiles/images/Main Characters/Virtual Guy/Wall Jump (32x32).png
-      - assets/tiles/images/Menu/Buttons/Achievements.png
-      - assets/tiles/images/Menu/Buttons/Back.png
-      - assets/tiles/images/Menu/Buttons/Close.png
-      - assets/tiles/images/Menu/Buttons/Leaderboard.png
-      - assets/tiles/images/Menu/Buttons/Levels.png
-      - assets/tiles/images/Menu/Buttons/Next.png
-      - assets/tiles/images/Menu/Buttons/Play.png
-      - assets/tiles/images/Menu/Buttons/Previous.png
-      - assets/tiles/images/Menu/Buttons/Restart.png
-      - assets/tiles/images/Menu/Buttons/Settings.png
-      - assets/tiles/images/Menu/Buttons/Volume.png
-      - assets/tiles/images/Menu/Levels/01.png
-      - assets/tiles/images/Menu/Levels/02.png
-      - assets/tiles/images/Menu/Levels/03.png
-      - assets/tiles/images/Menu/Levels/04.png
-      - assets/tiles/images/Menu/Levels/05.png
-      - assets/tiles/images/Menu/Levels/06.png
-      - assets/tiles/images/Menu/Levels/07.png
-      - assets/tiles/images/Menu/Levels/08.png
-      - assets/tiles/images/Menu/Levels/09.png
-      - assets/tiles/images/Menu/Levels/10.png
-      - assets/tiles/images/Menu/Levels/11.png
-      - assets/tiles/images/Menu/Levels/12.png
-      - assets/tiles/images/Menu/Levels/13.png
-      - assets/tiles/images/Menu/Levels/14.png
-      - assets/tiles/images/Menu/Levels/15.png
-      - assets/tiles/images/Menu/Levels/16.png
-      - assets/tiles/images/Menu/Levels/17.png
-      - assets/tiles/images/Menu/Levels/18.png
-      - assets/tiles/images/Menu/Levels/19.png
-      - assets/tiles/images/Menu/Levels/20.png
-      - assets/tiles/images/Menu/Levels/21.png
-      - assets/tiles/images/Menu/Levels/22.png
-      - assets/tiles/images/Menu/Levels/23.png
-      - assets/tiles/images/Menu/Levels/24.png
-      - assets/tiles/images/Menu/Levels/25.png
-      - assets/tiles/images/Menu/Levels/26.png
-      - assets/tiles/images/Menu/Levels/27.png
-      - assets/tiles/images/Menu/Levels/28.png
-      - assets/tiles/images/Menu/Levels/29.png
-      - assets/tiles/images/Menu/Levels/30.png
-      - assets/tiles/images/Menu/Levels/31.png
-      - assets/tiles/images/Menu/Levels/32.png
-      - assets/tiles/images/Menu/Levels/33.png
-      - assets/tiles/images/Menu/Levels/34.png
-      - assets/tiles/images/Menu/Levels/35.png
-      - assets/tiles/images/Menu/Levels/36.png
-      - assets/tiles/images/Menu/Levels/37.png
-      - assets/tiles/images/Menu/Levels/38.png
-      - assets/tiles/images/Menu/Levels/39.png
-      - assets/tiles/images/Menu/Levels/40.png
-      - assets/tiles/images/Menu/Levels/41.png
-      - assets/tiles/images/Menu/Levels/42.png
-      - assets/tiles/images/Menu/Levels/43.png
-      - assets/tiles/images/Menu/Levels/44.png
-      - assets/tiles/images/Menu/Levels/45.png
-      - assets/tiles/images/Menu/Levels/46.png
-      - assets/tiles/images/Menu/Levels/47.png
-      - assets/tiles/images/Menu/Levels/48.png
-      - assets/tiles/images/Menu/Levels/49.png
-      - assets/tiles/images/Menu/Levels/50.png
-      - assets/tiles/images/Menu/Text/Text (Black) (8x10).png
-      - assets/tiles/images/Menu/Text/Text (White) (8x10).png
-      - assets/tiles/images/Other/Confetti (16x16).png
-      - assets/tiles/images/Other/Dust Particle.png
-      - assets/tiles/images/Other/Shadow.png
-      - assets/tiles/images/Other/Transition.png
-      - assets/tiles/images/Terrain/Terrain (16x16).png
-      - assets/tiles/images/Traps/Arrow/Hit (18x18).png
-      - assets/tiles/images/Traps/Arrow/Idle (18x18).png
-      - assets/tiles/images/Traps/Blocks/HitSide (22x22).png
-      - assets/tiles/images/Traps/Blocks/HitTop (22x22).png
-      - assets/tiles/images/Traps/Blocks/Idle.png
-      - assets/tiles/images/Traps/Blocks/Part 1 (22x22).png
-      - assets/tiles/images/Traps/Blocks/Part 2 (22x22).png
-      - assets/tiles/images/Traps/Falling Platforms/Off.png
-      - assets/tiles/images/Traps/Falling Platforms/On (32x10).png
-      - assets/tiles/images/Traps/Fan/Off.png
-      - assets/tiles/images/Traps/Fan/On (24x8).png
-      - assets/tiles/images/Traps/Fire/Hit (16x32).png
-      - assets/tiles/images/Traps/Fire/Off.png
-      - assets/tiles/images/Traps/Fire/On (16x32).png
-      - assets/tiles/images/Traps/Platforms/Brown Off.png
-      - assets/tiles/images/Traps/Platforms/Brown On (32x8).png
-      - assets/tiles/images/Traps/Platforms/Chain.png
-      - assets/tiles/images/Traps/Platforms/Grey Off.png
-      - assets/tiles/images/Traps/Platforms/Grey On (32x8).png
-      - assets/tiles/images/Traps/Rock Head/Blink (42x42).png
-      - assets/tiles/images/Traps/Rock Head/Bottom Hit (42x42).png
-      - assets/tiles/images/Traps/Rock Head/Idle.png
-      - assets/tiles/images/Traps/Rock Head/Left Hit (42x42).png
-      - assets/tiles/images/Traps/Rock Head/Right Hit (42x42).png
-      - assets/tiles/images/Traps/Rock Head/Top Hit (42x42).png
-      - assets/tiles/images/Traps/Sand Mud Ice/Ice Particle.png
-      - assets/tiles/images/Traps/Sand Mud Ice/Mud Particle.png
-      - assets/tiles/images/Traps/Sand Mud Ice/Sand Mud Ice (16x6).png
-      - assets/tiles/images/Traps/Sand Mud Ice/Sand Particle.png
-      - assets/tiles/images/Traps/Saw/Chain.png
-      - assets/tiles/images/Traps/Saw/Off.png
-      - assets/tiles/images/Traps/Saw/On (38x38).png
-      - assets/tiles/images/Traps/Spike Head/Blink (54x52).png
-      - assets/tiles/images/Traps/Spike Head/Bottom Hit (54x52).png
-      - assets/tiles/images/Traps/Spike Head/Idle.png
-      - assets/tiles/images/Traps/Spike Head/Left Hit (54x52).png
-      - assets/tiles/images/Traps/Spike Head/Right Hit (54x52).png
-      - assets/tiles/images/Traps/Spike Head/Top Hit (54x52).png
-      - assets/tiles/images/Traps/Spiked Ball/Chain.png
-      - assets/tiles/images/Traps/Spiked Ball/Spiked Ball.png
-      - assets/tiles/images/Traps/Spikes/Idle.png
-      - assets/tiles/images/Traps/Trampoline/Idle.png
-      - assets/tiles/images/Traps/Trampoline/Jump (28x28).png
+      - assets/images/
+      - assets/images/Background/
+      - assets/images/HUD/
+      - assets/images/Items/Boxes/Box1/
+      - assets/images/Items/Boxes/Box2/
+      - assets/images/Items/Boxes/Box3/
+      - assets/images/Items/Checkpoints/Checkpoint/
+      - assets/images/Items/Checkpoints/End/
+      - assets/images/Items/Checkpoints/Start/
+      - assets/images/Items/Fruits/
+      - assets/images/Main Characters/
+      - assets/images/Main Characters/Mask Dude/
+      - assets/images/Main Characters/Ninja Frog/
+      - assets/images/Main Characters/Pink Man/
+      - assets/images/Main Characters/Virtual Guy/
+      - assets/images/Menu/Buttons/
+      - assets/images/Menu/Levels/
+      - assets/images/Menu/Text/
+      - assets/images/Other/
+      - assets/images/Terrain/
+      - assets/images/Traps/Arrow/
+      - assets/images/Traps/Blocks/
+      - assets/images/Traps/Falling Platforms/
+      - assets/images/Traps/Fan/
+      - assets/images/Traps/Fire/
+      - assets/images/Traps/Platforms/
+      - assets/images/Traps/Rock Head/
+      - assets/images/Traps/Sand Mud Ice/
+      - assets/images/Traps/Saw/
+      - assets/images/Traps/Spike Head/
+      - assets/images/Traps/Spiked Ball/
+      - assets/images/Traps/Spikes/
+      - assets/images/Traps/Trampoline/
+      - assets/tiles/
+      - assets/tiles/images/
+      - assets/tiles/images/Background/
+      - assets/tiles/images/Items/Boxes/Box1/
+      - assets/tiles/images/Items/Boxes/Box2/
+      - assets/tiles/images/Items/Boxes/Box3/
+      - assets/tiles/images/Items/Checkpoints/Checkpoint/
+      - assets/tiles/images/Items/Checkpoints/End/
+      - assets/tiles/images/Items/Checkpoints/Start/
+      - assets/tiles/images/Items/Fruits/
+      - assets/tiles/images/Main Characters/
+      - assets/tiles/images/Main Characters/Mask Dude/
+      - assets/tiles/images/Main Characters/Ninja Frog/
+      - assets/tiles/images/Main Characters/Pink Man/
+      - assets/tiles/images/Main Characters/Virtual Guy/
+      - assets/tiles/images/Menu/Buttons/
+      - assets/tiles/images/Menu/Levels/
+      - assets/tiles/images/Menu/Text/
+      - assets/tiles/images/Other/
+      - assets/tiles/images/Terrain/
+      - assets/tiles/images/Traps/Arrow/
+      - assets/tiles/images/Traps/Blocks/
+      - assets/tiles/images/Traps/Falling Platforms/
+      - assets/tiles/images/Traps/Fan/
+      - assets/tiles/images/Traps/Fire/
+      - assets/tiles/images/Traps/Platforms/
+      - assets/tiles/images/Traps/Rock Head/
+      - assets/tiles/images/Traps/Sand Mud Ice/
+      - assets/tiles/images/Traps/Saw/
+      - assets/tiles/images/Traps/Spike Head/
+      - assets/tiles/images/Traps/Spiked Ball/
+      - assets/tiles/images/Traps/Spikes/
+      - assets/tiles/images/Traps/Trampoline/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
