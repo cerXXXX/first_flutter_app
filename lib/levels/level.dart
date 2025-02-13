@@ -1,10 +1,7 @@
-import 'dart:ui';
-
 import 'package:first_flame_game/actors/player.dart';
 import 'package:flame/components.dart';
 import 'dart:async';
 import 'package:flame_tiled/flame_tiled.dart';
-import 'package:flame/game.dart';
 
 class Level extends World{
   String levelName;

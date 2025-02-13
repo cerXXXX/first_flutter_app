@@ -4,7 +4,6 @@ import 'package:flame/events.dart';
 import 'package:flame/game.dart';
 import 'package:first_flame_game/levels/level.dart';
 import 'dart:async';
-import 'package:flame/extensions.dart';
 import 'package:flutter/cupertino.dart';
 
 class PixelAdventure extends FlameGame
