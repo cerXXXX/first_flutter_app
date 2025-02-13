@@ -8,38 +8,30 @@ if (Platform.isAndroid) 'package:flutter/cupertino.dart';
 import 'package:first_flame_game/pixel_adventure.dart';
 import 'package:flame/game.dart';
 
-void main() {
-  // Устанавливаем, чтобы ошибки в зоне были фатальными (опционально)
-  // BindingBase.debugZoneErrorsAreFatal = true;
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Flame.device.fullScreen();
+  await Flame.device.setLandscape();
 
-  runZonedGuarded(() async {
-    // Инициализируем FlutterBinding в этой же зоне
-    WidgetsFlutterBinding.ensureInitialized();
+  // Создаём глобальный ErrorNotifier для хранения ошибок
+  final errorNotifier = ErrorNotifier();
 
-    // Выполняем инициализацию Flame
-    await Flame.device.fullScreen();
-    await Flame.device.setLandscape();
+  // Перехватываем ошибки Flutter
+  FlutterError.onError = (FlutterErrorDetails details) {
+    errorNotifier.addError(details.toString());
+    FlutterError.dumpErrorToConsole(details);
+  };
 
-    // Создаём ErrorNotifier для отображения ошибок
-    final errorNotifier = ErrorNotifier();
-
-    // Глобальная обработка ошибок Flutter
-    FlutterError.onError = (FlutterErrorDetails details) {
-      errorNotifier.addError(details.toString());
-      FlutterError.dumpErrorToConsole(details);
-    };
-
+  // Запускаем приложение в зоне, перехватывающей ошибки runZonedGuarded
+  runZonedGuarded(() {
     PixelAdventure game = PixelAdventure();
-
     runApp(MyApp(game: game, errorNotifier: errorNotifier));
   }, (error, stackTrace) {
-    // Глобальная обработка непойманных ошибок
-    print('Unhandled error: $error');
-    print(stackTrace);
+    errorNotifier.addError('$error\n$stackTrace');
   });
 }
 
-/// Класс для хранения ошибок с уведомлением слушателей
+/// Класс, который хранит список ошибок и уведомляет слушателей об изменениях
 class ErrorNotifier extends ChangeNotifier {
   final List<String> _errors = [];
   List<String> get errors => List.unmodifiable(_errors);
@@ -50,7 +42,7 @@ class ErrorNotifier extends ChangeNotifier {
   }
 }
 
-/// Виджет, который отображает ошибки поверх всего экрана
+/// Виджет, отображающий ошибки поверх всего экрана
 class ErrorOverlay extends StatelessWidget {
   final ErrorNotifier errorNotifier;
   const ErrorOverlay({Key? key, required this.errorNotifier}) : super(key: key);
@@ -74,13 +66,11 @@ class ErrorOverlay extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: errorNotifier.errors
-                    .map((e) => Text(
-                  e,
-                  style: const TextStyle(
-                    color: Colors.red,
-                    fontSize: 12,
-                  ),
-                ))
+                    .map((e) => Text(e,
+                    style: const TextStyle(
+                      color: Colors.red,
+                      fontSize: 12,
+                    )))
                     .toList(),
               ),
             ),
@@ -91,7 +81,7 @@ class ErrorOverlay extends StatelessWidget {
   }
 }
 
-/// Основное приложение, объединяющее GameWidget и ErrorOverlay
+/// Основное приложение, которое объединяет GameWidget и ErrorOverlay
 class MyApp extends StatelessWidget {
   final PixelAdventure game;
   final ErrorNotifier errorNotifier;
