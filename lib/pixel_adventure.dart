@@ -1,4 +1,5 @@
 import 'package:first_flame_game/actors/player.dart';
+import 'package:flame/cache.dart';
 import 'package:flame/components.dart';
 import 'package:flame/events.dart';
 import 'package:flame/game.dart';
@@ -17,6 +18,7 @@ class PixelAdventure extends FlameGame
 
   @override
   FutureOr<void> onLoad() async {
+    images = Images(prefix: "assets/");
     // load all img in cache
     await images.loadAllImages();
 
