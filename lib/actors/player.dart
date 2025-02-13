@@ -79,6 +79,7 @@ class Player extends SpriteAnimationGroupComponent
   }
 
   void _updatePlayerMovement(double dt) {
+    // throw Error();
     double dirX = 0.0;
     switch (playerDirection) {
       case PlayerDirection.left:
